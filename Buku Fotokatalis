@@ -1,0 +1,115 @@
+%Awali Dokumen Dengan \documentclass
+\documentclass{book}
+
+%Atur Ukuran Kertas dan Jarak Kanan Kiri
+\usepackage[a4paper, inner=1.5in, outer=1in]{geometry}
+
+%Atur Font Dasar dan Mengaktifkan Package Roman
+\usepackage{lmodern}
+
+%Atur jika ada ingin memasukkan referensi dari internet
+\usepackage{url}
+
+%Atur untuk masukkan gambar
+\usepackage{graphicx}
+
+%Memudahkan atur gambar
+\usepackage{subfig}
+
+%Atur Bullet dan Numbering
+\usepackage{enumitem}
+
+%Atur beberapa fasilitas di LaTex
+\usepackage{fancyhdr}
+
+%Atur cite 
+\usepackage{cite}
+
+%Mengganti nama Chapter menjadi Bab
+\renewcommand{\chaptername}{Bab}
+
+%Mengganti nama Content dengan Daftar Isi
+\renewcommand\contentsname{Daftar Isi}
+
+%Atur Spasi antar kolom
+\usepackage{setspace}
+
+
+\usepackage{listings}
+\usepackage{color}
+
+%Buat Judul Cover
+\title{A-Z: Reaksi Fotokatalis}
+
+%Atur Nama
+\author{Adri Huda}
+
+%Untuk memulai dokument
+\begin{document}
+
+%Atur agar Judul ditengah (Center)
+\begin{center}
+
+%Ukuran Font
+\Huge
+
+%Tebalkan (Bold) Judul
+\textbf{A-Z: Reaksi Fotokatalis}
+%Beri Jarak
+\vfill
+
+%Atur Ukuran Disusun Oleh
+\Large
+%Bold Disusun Oleh
+\textbf{Disusun Oleh} \\
+%Atur Jarak Spasi
+\medskip
+%Tebalkan Nama
+\textbf{Dr. Adri Huda, S.Si.}
+%Akhir dari Cover
+\end{center}
+
+%Jangan lupa ini untuk memprint judul
+\maketitle
+
+%Atur Nomor Halaman
+\pagenumbering{roman}
+%Mulai untuk mengatur jarak tertentu (single)
+\begin{singlespace}
+%Daftar Isi Satu Spasi
+\tableofcontents{}
+%Akhir dari Daftar Isi (1 Spasi)
+\end{singlespace}
+
+%Atur Spasi untuk Text Berikutnya
+\onehalfspace
+
+%Bab I
+\chapter{Sejarah Reaksi Fotokatalis}
+%Mulai Halaman dari 1
+\pagenumbering{arabic}
+\setcounter{page}{1}
+%Atur Section
+\section{Definisi Fotokatalis}
+
+	\paragraph{}
+	Fotokatalis dapat dibagi menjadi dua suku kata yaitu “Foto” dan “Katalis”. Foto di kamus besar Bahasa Indonesia (KBBI) diartikan sebagai gambaran; bayangan; atau pantulan. Kata foto di fotokatalis lebih diartikan sebagai sumber sinar atau sinar itu sendiri. Lebih lanjut, Katalis menurut KBBI diartikan sebagai zat yang dapat mempercepat atau memperlambat reaksi yang pada akhir reaksi dilepaskan Kembali dalam bentuk semula 
+	
+\chapter{Reaksi Fotokatalis Semikonduktor}
+
+\chapter{Sintesis dan Karakterisasi Material Fotokatalis}
+
+\chapter{Reaksi Fotokatalis untuk Aplikasi Lingkungan}
+
+\chapter{Reaksi Fotokatalis untuk Energi Baru dan Terbarukan}
+
+\chapter{Reaksi Fotokatalis untuk Antibakteri dan Sanitasi}
+
+\chapter{Imobilisasi Material Fotokatalis}
+
+\chapter{Potensi Pengembangan Reaksi Fotokatalis di Indonesia}
+
+	\bibliographystyle{plain}
+	\bibliography{pustaka}
+	
+\end{document}
